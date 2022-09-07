@@ -239,6 +239,9 @@ body {
       &--cutom::placeholder {
         text-align: end;
       }
+      &--custom:focus {
+        width: 100%;
+      }
     }
   }
   .number {

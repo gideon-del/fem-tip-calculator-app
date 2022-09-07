@@ -99,7 +99,7 @@ reset.addEventListener("click", function (e) {
   if (!reset.classList.contains("active")) return;
   bill = 0;
   Tip = 0;
-  billInput.value = peopleInput.value = "";
+  billInput.value = peopleInput.value = customInput.value = "";
   document.querySelector(".active-tip")?.classList.remove("active-tip");
   Totalperson.textContent = Totaltip.textContent = `$0.00`;
   reset.classList.remove("active");

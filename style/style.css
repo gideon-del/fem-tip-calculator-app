@@ -221,6 +221,9 @@ body {
   .bill__tip--cutom::placeholder {
     text-align: end;
   }
+  .bill__tip--custom:focus {
+    width: 100%;
+  }
   .number {
     font-size: 2rem;
   }
