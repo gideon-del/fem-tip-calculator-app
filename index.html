@@ -12,6 +12,7 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="./index.js"></script>
     <title>Frontend Mentor | Tip calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -39,7 +40,7 @@
                 type="number"
                 name="bill"
                 id="bill"
-                class="bill__input"
+                class="bill__input Total__bill"
                 placeholder="0"
               />
               <img src="./images/icon-dollar.svg" alt="" class="bill__logo" />
@@ -54,9 +55,11 @@
               ><button class="bill__tip">25%</button
               ><button class="bill__tip">50%</button>
               <input
-                type="text"
+                type="number"
                 class="bill__tip bill__tip--custom"
                 name="custom"
+                min="1"
+                max="100"
                 placeholder="Custom"
               />
             </div>
@@ -68,7 +71,7 @@
                 type="number"
                 name="bill"
                 id="bill"
-                class="bill__input"
+                class="bill__input Total__people"
                 placeholder="0"
               />
               <img src="./images/icon-person.svg" alt="" class="bill__logo" />
@@ -79,11 +82,11 @@
           <div class="bill__total">
             <div class="bill__amount">
               <p class="bill__amount--text">Tip Amount <span>/person</span></p>
-              <p class="number">$0.00</p>
+              <p class="number tip">$0.00</p>
             </div>
             <div class="bill__amount">
-              <p class="bill__amount--text">Tip Amount <span>/person</span></p>
-              <p class="number">$0.00</p>
+              <p class="bill__amount--text">Total <span>/person</span></p>
+              <p class="number total">$0.00</p>
             </div>
           </div>
           <button class="reset">Reset</button>

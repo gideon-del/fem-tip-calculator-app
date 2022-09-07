@@ -120,6 +120,7 @@ body {
 }
 .bill__tip--custom {
   background-color: var(--clr-light-grayish-cyan);
+  color: var(--clr-very-dark-cyan);
 }
 .bill__tip--custom::placeholder {
   text-align: start;
@@ -165,6 +166,13 @@ body {
   opacity: 0.2;
   padding: 1rem 2rem;
   font-size: var(--fs-default);
+  transition: all 0.2s ease-in;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+  color: var(--clr-very-dark-cyan);
+}
+.reset.active {
+  opacity: 1;
 }
 
 .number {
@@ -172,6 +180,15 @@ body {
   align-items: center;
   font-size: 3rem;
   color: var(--clr-strong-cyan);
+}
+
+.active-tip {
+  background-color: var(--clr-strong-cyan);
+  color: var(--clr-very-dark-cyan);
+}
+
+.red {
+  border: red 1px solid;
 }
 
 @media only screen and (max-width: 900px) {

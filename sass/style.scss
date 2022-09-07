@@ -135,6 +135,7 @@ body {
     width: 29%;
     &--custom {
       background-color: var(--clr-light-grayish-cyan);
+      color: var(--clr-very-dark-cyan);
       &::placeholder {
         text-align: start;
       }
@@ -181,12 +182,26 @@ body {
   opacity: 0.2;
   padding: 1rem 2rem;
   font-size: var(--fs-default);
+  transition: all 0.2s ease-in;
+  text-transform: uppercase;
+  border-radius: var(--border-radius);
+  color: var(--clr-very-dark-cyan);
+  &.active {
+    opacity: 1;
+  }
 }
 .number {
   display: flex;
   align-items: center;
   font-size: 3rem;
   color: var(--clr-strong-cyan);
+}
+.active-tip {
+  background-color: var(--clr-strong-cyan);
+  color: var(--clr-very-dark-cyan);
+}
+.red {
+  border: red 1px solid;
 }
 @include respond(tab-port) {
   body {
