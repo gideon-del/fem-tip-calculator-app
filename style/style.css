@@ -87,7 +87,7 @@ body {
 }
 .bill__input:focus {
   outline: none;
-  padding: 1rem 1.1rem;
+  padding: 0.3rem 1rem;
 }
 .bill__input--container {
   display: flex;
