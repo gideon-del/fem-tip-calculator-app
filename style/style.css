@@ -59,7 +59,7 @@ body {
   width: 100%;
 }
 .bill__container {
-  width: 77%;
+  width: 66%;
   background-color: var(--clr-white);
   padding: 2rem;
   margin-inline: auto;
@@ -79,7 +79,7 @@ body {
 .bill__input {
   background-color: var(--clr-light-grayish-cyan);
   border: none;
-  padding: 1rem;
+  padding: 0.3rem 1rem;
   border-radius: var(--border-radius);
   text-align: end;
   font-size: var(--fs-default);
@@ -94,9 +94,9 @@ body {
   flex-direction: column;
 }
 .bill__logo {
-  width: 24px;
+  width: 15px;
   position: absolute;
-  top: 1rem;
+  top: 0.8rem;
   left: 10px;
 }
 .bill__text {
